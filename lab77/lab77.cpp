@@ -1,4 +1,5 @@
-﻿#include <iostream>
+﻿#define _CRT_SECURE_NO_WARNINGS
+#include <iostream>
 #include <stdio.h>
 using namespace std;
 int main() {
@@ -37,7 +38,7 @@ int main() {
     // Задание 3 
     int S, srok, procent;
     printf("Введите сумму, срок и процентную ставку кредита: ");
-   
+    scanf("%d %d &d", &S,&srok,&procent);
 
     return 0;
 }
