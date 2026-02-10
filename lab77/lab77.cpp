@@ -5,8 +5,8 @@ using namespace std;
 int main() {
     // Задание 2 
     int mx;
-    cout << "Введите максимальное значение MAX\n";
-    cin >> mx;
+    printf("Введите максимальное значение MAX\n");
+    scanf("%d", &mx);
 
     int count = 0; int sum = 0;
     int fib1 = 0; int fib2 = 1;
@@ -25,10 +25,10 @@ int main() {
             fib2 = temp;
         }
         sum += temp;
-        cout << "F(" << count << ") = " << temp << " Сумма первых чисел Фибоначчи: " << sum << endl;
+        printf("F(%d) = %d Сумма первых чисел фибоначчи %d \n", count,temp,sum);
 
         if (sum > mx) {
-            cout << "Сумма превысила MAX на числе " << count << endl << endl;
+            printf("Сумма превысила MAX на числе %d\n", count);
             break;
         }
         count++;
