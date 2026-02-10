@@ -1,7 +1,7 @@
 ﻿#include <iostream>
 using namespace std;
 int main() {
-    int N, mx;
+    int mx;
     cout << "Введите максимальное значение MAX\n";
     cin >> mx;
 
