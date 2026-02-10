@@ -1,6 +1,8 @@
 ﻿#include <iostream>
+#include <stdio.h>
 using namespace std;
 int main() {
+    // Задание 2 
     int mx;
     cout << "Введите максимальное значение MAX\n";
     cin >> mx;
@@ -21,16 +23,21 @@ int main() {
             fib1 = fib2;
             fib2 = temp;
         }
-
         sum += temp;
-        count++;
+        cout << "F(" << count << ") = " << temp << " Сумма первых чисел Фибоначчи: " << sum << endl;
 
         if (sum > mx) {
-            cout << "Сумма превысила MAX на числе " << count;
+            cout << "Сумма превысила MAX на числе " << count << endl << endl;
             break;
         }
-        cout << "F(" << count << ") = " << temp << " Сумма первых чисел Фибоначчи: " << sum << endl;
+        count++;
+      
     }
+
+    // Задание 3 
+    int S, srok, procent;
+    printf("Введите сумму, срок и процентную ставку кредита: ");
+   
 
     return 0;
 }
