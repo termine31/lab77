@@ -1,9 +1,10 @@
 ﻿#define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 #include <stdio.h>
+#include <cmath>
 using namespace std;
 int main() {
-    // Задание 2 
+     // Задание 2 
     int mx;
     printf("2 задание\n");
     printf("Введите максимальное значение MAX\n");
@@ -63,7 +64,34 @@ int main() {
         printf("%3d %9.2lf %9.2lf %9.2lf\n", i, debt, interest, payment);
     }
     printf("-----------------------------------\n");
-    printf("Всего процентов: %.2lf \n", total_interest);
+    printf("Всего процентов: %.2lf \n\n", total_interest);
+
+
+    // задание 1 
+    double a ;
+    int b;// a - это начальная точка, b - 4 т.к интервал от 0 до 4 
+    b = 4; 
+    printf("Введите начальную точку а: \n");
+    scanf("%lf", &a);
+    if (a > 0 && a < 4) {
+        double f; // сама функция
+        double x; // точка x
+        double h;// равномерный шаг между точками
+        h = (b - a) / 9; 
+        for (int i = 0; i <= 9; i++) {
+            x = a + i * h;
+            f = sin(x) / x;
+            printf("Точка %2d: x= %4.4f, f(x) = %4.4f\n", i + 1, x, f);
+            
+        }
+    }
+    else {
+        printf("Точка не в интервале от 0 до 4");
+    }
+
+
+
+
 
 
     return 0;
